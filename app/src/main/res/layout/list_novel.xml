@@ -22,40 +22,46 @@
             android:src="@drawable/ic_launcher_background"
             android:layout_margin="5dp"/>
 
-        <TextView
-            android:id="@+id/nama_novel"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Nama Novel"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:paddingLeft="20dp"
-            android:gravity="center"/>
-
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:orientation="vertical"
-            android:paddingLeft="20dp">
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/nama_novel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Nama"
+                android:textSize="15dp"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:textStyle="bold">
+            </TextView>
 
             <TextView
                 android:id="@+id/deskripsi_novel"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Deskripsi Novel"
-                android:textSize="16sp"
-                android:textColor="@android:color/black"/>
-
+                android:layout_height="match_parent"
+                android:text="Nama"
+                android:textSize="15dp"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                >
+            </TextView>
             <TextView
                 android:id="@+id/harga_novel"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Harga Novel"
-                android:textSize="16sp"
-                android:textColor="@android:color/black" />
-        </LinearLayout>
+                android:layout_height="match_parent"
+                android:text="Nama"
+                android:textSize="15dp"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:textStyle="bold">
+            </TextView>
 
+        </LinearLayout>
 
     </LinearLayout>
 

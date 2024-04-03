@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -24,21 +25,13 @@ public class MainActivity extends AppCompatActivity {
         getData();
 
         recyclerView = findViewById(R.id.recycle_view);
-        novelAdapter = new NovelAdapter(novelModel);
+        NovelAdapter novelAdapter = new NovelAdapter(novelModel, this);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(novelAdapter);
 
-        novelAdapter.setOnItemClickListener(new NovelAdapter.OnItemClickListener() {
-            @Override
-            public void onItemClick(int position) {
-                // Lakukan tindakan yang sesuai ketika item diklik
-                NovelModel clickedItem = novelModel.get(position);
-                Toast.makeText(MainActivity.this, clickedItem.getNamaNovel() + " clicked", Toast.LENGTH_SHORT).show();
-                // Misalnya, Anda dapat memulai aktivitas detail di sini
-            }
-        });
+
     }
 
     private void getData() {

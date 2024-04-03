@@ -37,7 +37,7 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        imgDetail = findViewById(R.id.imgDetail);
+        imgDetail = findViewById(R.id.imageDetail);
         txtDetailNama = findViewById(R.id.txtDetailNama);
         txtDetailHarga = findViewById(R.id.txtDetailHarga);
         txtDetailDeskripsi = findViewById(R.id.txtDetailDeskripsi);
