@@ -1,5 +1,6 @@
 package com.example.novelday06;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -41,7 +42,7 @@ public class NovelAdapter extends RecyclerView.Adapter<NovelAdapter.ViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull NovelAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull NovelAdapter.ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         NovelModel currentNovel = novelModel.get(position);
 
         holder.namaNovel.setText(currentNovel.getNamaNovel());
